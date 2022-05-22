@@ -1,5 +1,6 @@
 const apiUrl = 'https://opentdb.com/api.php?amount=50';
 
+
 fetch(apiUrl).then(res => res.json()).then(data => {
     let quizData = data.results;
     QuizData_Length = quizData.length;
