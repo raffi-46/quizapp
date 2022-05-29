@@ -20,7 +20,7 @@ fetch(apiUrl).then(res => res.json()).then(data => {
     console.log(quizCategory);
     console.log(quizDiffLevel);
 
-    let quizDataKeys = ["question","correct_answer","incorrect_answers","category","difficulty"]
+    let quizDataKeys = ["question","correct_answer","incorrect_answers","category","difficulty"];
     let rNum = Math.floor((Math.random() * (quizincorrectAnswers.length +1)) );
     
     quizincorrectAnswers.splice(rNum,0,(quizCorrectAnswer))
