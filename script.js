@@ -24,7 +24,6 @@ fetch(apiUrl).then(res => res.json()).then(data => {
     quizincorrectAnswers.splice(rNum,0,(quizCorrectAnswer))
     console.log(rNum);
     console.log(quizincorrectAnswers);
-    console.log(quizData);
 
        
 })
