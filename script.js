@@ -1,6 +1,4 @@
 const apiUrl = 'https://opentdb.com/api.php?amount=50';
-
-
 fetch(apiUrl).then(res => res.json()).then(data => {
     let quizData = data.results;
     QuizData_Length = quizData.length;
@@ -11,7 +9,7 @@ fetch(apiUrl).then(res => res.json()).then(data => {
     let quizincorrectAnswers = quizData[qNum].incorrect_answers;
     let quizCategory = quizData[qNum].category;
     let quizDiffLevel = quizData[qNum].difficulty;
-
+    
     console.log("API Data:" , quizData);
     console.log(qNum);
     console.log(quizQuestion);
@@ -26,6 +24,7 @@ fetch(apiUrl).then(res => res.json()).then(data => {
     quizincorrectAnswers.splice(rNum,0,(quizCorrectAnswer))
     console.log(rNum);
     console.log(quizincorrectAnswers);
+    console.log(quizData);
 
        
 })
